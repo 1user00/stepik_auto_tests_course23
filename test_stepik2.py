@@ -29,8 +29,8 @@ class TestMain:
             # Авторизация
             login = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "[name='login']")))
             password = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "[name='password']")))
-            login.send_keys("vafanasev74@gmail.com")
-            password.send_keys("Interest65&")
+            login.send_keys("example@gmail.com")
+            password.send_keys("122557")
             button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button.sign-form__btn")))
             browser.execute_script("arguments[0].click();", button)
 
